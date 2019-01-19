@@ -13,7 +13,7 @@ multiGrep <- function(toMatch, toSearch, ...){
 
 # ======== Reading in data
 
-# A complete Seurat object with cluter info
+# A complete Seurat object with cluster info
 seurat_unt <- readRDS("./data/2047_Updated_Seurat2_v2.3.1_.RDS")
 
 # For converting ensembl IDs to comman genes names
@@ -458,9 +458,7 @@ ui <- fixedPage(theme = shinytheme("paper"),
 
 #__________
 #run the shinyApp
-shinyApp(ui = ui, server = server) #
-
-#, options = list(height = 1080) ,  doesn't work to fix ggplots to fill out the whole browser window and not only half
+shinyApp(ui = ui, server = server)
 
 # bash command to run locally
 # R -e "shiny::runApp('/Volumes/projects/ddiaz/Analysis/Scripts/rsconnect/shinyapps.io/neuromast_homeostasis_scRNAseq_2018')"
