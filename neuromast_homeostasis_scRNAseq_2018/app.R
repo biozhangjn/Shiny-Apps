@@ -419,6 +419,13 @@ ui <- fixedPage(theme = shinytheme("paper"),
               Ensembl IDs. Only genes that are expressed in at least 3
               cells can be plotted (i.e. those that return TRUE in the 3rd column).',
               offset = 0),
+            column(10, tags$hr()),
+            column(12, tags$b("Encouter a bug?")),
+            column(10,
+              'Please submit an issue on our GitHub page:',
+              tags$a(href = "https://github.com/Piotrowski-Lab/Shiny-Apps",
+                "https://github.com/Piotrowski-Lab/Shiny-Apps"),
+              offset = 0),
             column(10, tags$hr())
           )
         ),
